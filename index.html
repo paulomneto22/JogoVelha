@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha | Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="jogo">
+
+        <header class="cabecalho">
+            <span class="subtitulo">DESAFIO CLÁSSICO</span>
+            <h1>Jogo da <span>Velha</span></h1>
+            <p>Dois jogadores. Uma vitória.</p>
+        </header>
+
+        <div class="modos">
+            <button id="modo2" class="modo selecionado">
+                👥 2 Jogadores
+            </button>
+
+            <button id="modoIA" class="modo">
+                🤖 Contra a IA
+            </button>
+        </div>
+
+        <section class="placar">
+            <div class="jogador ativo" id="jogadorX">
+                <span class="simbolo x">X</span>
+                <p>Jogador 1</p>
+                <strong id="pontosX">0</strong>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="jogador" id="jogadorO">
+                <span class="simbolo o">O</span>
+                <p id="nomeJogadorO">Jogador 2</p>
+                <strong id="pontosO">0</strong>
+            </div>
+        </section>
+
+        <section class="painel">
+
+            <div class="status">
+                <span class="indicador"></span>
+                <p id="mensagem">Vez do Jogador X</p>
+            </div>
+
+            <div class="tabuleiro">
+                <button class="casa" aria-label="Casa 1"></button>
+                <button class="casa" aria-label="Casa 2"></button>
+                <button class="casa" aria-label="Casa 3"></button>
+                <button class="casa" aria-label="Casa 4"></button>
+                <button class="casa" aria-label="Casa 5"></button>
+                <button class="casa" aria-label="Casa 6"></button>
+                <button class="casa" aria-label="Casa 7"></button>
+                <button class="casa" aria-label="Casa 8"></button>
+                <button class="casa" aria-label="Casa 9"></button>
+            </div>
+
+            <div id="resultado" class="resultado">
+                Faça sua jogada!
+            </div>
+
+            <button id="reiniciar" class="botao-principal">
+                <span>↻</span> Reiniciar partida
+            </button>
+
+            <button id="novoJogo" class="botao-secundario">
+                Novo jogo
+            </button>
+
+        </section>
+
+        <footer>
+            <p>ARENA DA VELHA <span>•</span> 2 JOGADORES</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
